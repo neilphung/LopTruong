@@ -3,25 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB03B48CB0901D0936CABB1 /* Pods_LopTruong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E46969D56180EA2DFBF21F4 /* Pods_LopTruong.framework */; };
 		BDA52D822303A728007E593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA52D812303A728007E593C /* AppDelegate.swift */; };
-		BDA52D842303A728007E593C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA52D832303A728007E593C /* ViewController.swift */; };
 		BDA52D872303A728007E593C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA52D852303A728007E593C /* Main.storyboard */; };
 		BDA52D892303A729007E593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA52D882303A729007E593C /* Assets.xcassets */; };
 		BDA52D8C2303A729007E593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA52D8A2303A729007E593C /* LaunchScreen.storyboard */; };
+		BDA52D942303B241007E593C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA52D932303B241007E593C /* WelcomeViewController.swift */; };
+		BDA52D992303BB9B007E593C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA52D982303BB9B007E593C /* GoogleService-Info.plist */; };
+		BDA52D9B2303BCF6007E593C /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA52D9A2303BCF6007E593C /* FUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E46969D56180EA2DFBF21F4 /* Pods_LopTruong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LopTruong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA52D7E2303A728007E593C /* LopTruong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LopTruong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA52D812303A728007E593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDA52D832303A728007E593C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDA52D862303A728007E593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDA52D882303A729007E593C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDA52D8B2303A729007E593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDA52D8D2303A729007E593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA52D932303B241007E593C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BDA52D982303BB9B007E593C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDA52D9A2303BCF6007E593C /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		C309B6751350DF781FA4A8F0 /* Pods-LopTruong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LopTruong.release.xcconfig"; path = "Target Support Files/Pods-LopTruong/Pods-LopTruong.release.xcconfig"; sourceTree = "<group>"; };
+		F665352A690C9C86AE9B1A45 /* Pods-LopTruong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LopTruong.debug.xcconfig"; path = "Target Support Files/Pods-LopTruong/Pods-LopTruong.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB03B48CB0901D0936CABB1 /* Pods_LopTruong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41DC83172CBC21FA68973E8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E46969D56180EA2DFBF21F4 /* Pods_LopTruong.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		738D6D88E5A35604E0F75578 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F665352A690C9C86AE9B1A45 /* Pods-LopTruong.debug.xcconfig */,
+				C309B6751350DF781FA4A8F0 /* Pods-LopTruong.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BDA52D752303A728007E593C = {
 			isa = PBXGroup;
 			children = (
 				BDA52D802303A728007E593C /* LopTruong */,
 				BDA52D7F2303A728007E593C /* Products */,
+				738D6D88E5A35604E0F75578 /* Pods */,
+				41DC83172CBC21FA68973E8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,48 @@
 		BDA52D802303A728007E593C /* LopTruong */ = {
 			isa = PBXGroup;
 			children = (
-				BDA52D812303A728007E593C /* AppDelegate.swift */,
-				BDA52D832303A728007E593C /* ViewController.swift */,
-				BDA52D852303A728007E593C /* Main.storyboard */,
+				BDA52D972303B26B007E593C /* Model */,
+				BDA52D952303B24D007E593C /* Controllers */,
+				BDA52D962303B25D007E593C /* Views */,
 				BDA52D882303A729007E593C /* Assets.xcassets */,
-				BDA52D8A2303A729007E593C /* LaunchScreen.storyboard */,
 				BDA52D8D2303A729007E593C /* Info.plist */,
+				BDA52D982303BB9B007E593C /* GoogleService-Info.plist */,
+				BDA52D9C2303BCFB007E593C /* Classes */,
 			);
 			path = LopTruong;
+			sourceTree = "<group>";
+		};
+		BDA52D952303B24D007E593C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDA52D812303A728007E593C /* AppDelegate.swift */,
+				BDA52D932303B241007E593C /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BDA52D962303B25D007E593C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDA52D852303A728007E593C /* Main.storyboard */,
+				BDA52D8A2303A729007E593C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDA52D972303B26B007E593C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDA52D9C2303BCFB007E593C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDA52D9A2303BCF6007E593C /* FUser.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDA52D902303A729007E593C /* Build configuration list for PBXNativeTarget "LopTruong" */;
 			buildPhases = (
+				435F4A6D18735C267C9170F4 /* [CP] Check Pods Manifest.lock */,
 				BDA52D7A2303A728007E593C /* Sources */,
 				BDA52D7B2303A728007E593C /* Frameworks */,
 				BDA52D7C2303A728007E593C /* Resources */,
+				A3C08CC137621F04078A854B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA52D8C2303A729007E593C /* LaunchScreen.storyboard in Resources */,
+				BDA52D992303BB9B007E593C /* GoogleService-Info.plist in Resources */,
 				BDA52D892303A729007E593C /* Assets.xcassets in Resources */,
 				BDA52D872303A728007E593C /* Main.storyboard in Resources */,
 			);
@@ -130,13 +195,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		435F4A6D18735C267C9170F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LopTruong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C08CC137621F04078A854B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LopTruong/Pods-LopTruong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LopTruong/Pods-LopTruong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LopTruong/Pods-LopTruong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDA52D7A2303A728007E593C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA52D842303A728007E593C /* ViewController.swift in Sources */,
+				BDA52D9B2303BCF6007E593C /* FUser.swift in Sources */,
 				BDA52D822303A728007E593C /* AppDelegate.swift in Sources */,
+				BDA52D942303B241007E593C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +388,7 @@
 		};
 		BDA52D912303A729007E593C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F665352A690C9C86AE9B1A45 /* Pods-LopTruong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +407,7 @@
 		};
 		BDA52D922303A729007E593C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C309B6751350DF781FA4A8F0 /* Pods-LopTruong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
