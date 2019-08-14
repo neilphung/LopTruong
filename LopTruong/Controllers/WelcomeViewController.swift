@@ -32,7 +32,7 @@ class WelcomeViewController: UIViewController {
     }
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         dismissKeyboard()
-        cleanTextField()
+        cleanTextFields()
     }
     
 
@@ -41,9 +41,7 @@ class WelcomeViewController: UIViewController {
         if emailTextField.text != "" && passwordTextField.text != "" && repeatTextField.text != "" {
             
             if passwordTextField.text == repeatTextField.text {
-               
-                dismissKeyboard()
-                cleanTextField()
+                registerUser()
             }else {
                ProgressHUD.showError("Mật khẩu không giống nhau")
             }
@@ -63,10 +61,27 @@ class WelcomeViewController: UIViewController {
         view.endEditing(false)
     }
     
-    func cleanTextField() {
+    func cleanTextFields() {
         emailTextField.text = ""
         passwordTextField.text = ""
         repeatTextField.text = ""
+    }
+    
+    func registerUser(){
+        performSegue(withIdentifier: "goToFinishReg", sender: self)
+        cleanTextFields()
+        dismissKeyboard()
+    }
+    
+    //MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFinishReg" {
+            let destinationVC = segue.destination as! FinishRegistrationViewController
+            
+            destinationVC.email = emailTextField.text
+            destinationVC.password = passwordTextField.text
+        }
     }
     
 }

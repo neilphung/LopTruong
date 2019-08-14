@@ -19,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        //Auto login
+        if Auth.auth().currentUser != nil {
+            goToApp()
+        }
+        
         return true
     }
 
@@ -42,6 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    //Helper Method
+    func goToApp() {
+        let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApplication") as! MainApplicationTableViewController
+        
+         self.window?.rootViewController = mainView
     }
 
 

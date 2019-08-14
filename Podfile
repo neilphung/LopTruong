@@ -8,5 +8,8 @@ target 'LopTruong' do
 
 pod 'ProgressHUD'
 pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+
 
 end
